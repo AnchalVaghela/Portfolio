@@ -1,0 +1,208 @@
+nav {
+    margin-bottom: 10px;
+    background-color: bisque;
+    width: 2000px;
+    font-size: x-large;
+
+    font: bold;
+    position: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+nav ul a {
+    margin: 30px;
+    justify-content: right;
+    align-items: flex-end;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    box-shadow: 0px 10px 10px 0px;
+    box-sizing: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: 23px;
+    color: cadetblue;
+}
+
+#home .homedesc {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 10px;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+
+#home .homedesc p {
+    margin-top: 200px;
+    padding: 20px;
+    color: cadetblue;
+    font-size: x-large;
+    box-shadow: 0px 9px 10px 0px;
+}
+
+#about span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 8rem;
+}
+
+#about h2 {
+    margin-left: 120px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#about p {
+    margin: 100px;
+    padding: 60px;
+    font-size: x-large;
+    box-shadow: 5px 10px 10px 15px;
+    border-radius: 20px;
+    font: bolder;
+}
+
+#about span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 8rem;
+}
+
+#about h2 {
+    margin-left: 120px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#resume span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 8rem;
+}
+
+#resume h2 {
+    margin-left: 120px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#resume a {
+    margin: 8rem;
+    margin-left: 700px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 9px 9px 8px;
+    background-color: burlywood;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: x-large;
+}
+
+#resume a:hover {
+    background-color: chocolate;
+}
+
+#resume img {
+    margin-left: 300px;
+    width: 100px;
+    height: 100px;
+}
+
+#project span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 8rem;
+}
+
+#project h2 {
+    margin-left: 120px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.promain {
+    margin: 200px;
+    padding: 1vh;
+    background-color: rgb(211, 176, 152);
+}
+
+#project .procontainer {
+    margin: 150px;
+    padding: 20px;
+    border-radius: 20px;
+    height: auto;
+    display: flex;
+    background-color: rgb(162, 228, 206);
+
+}
+
+#project .procontainer img {
+    height: 550px;
+    width: 550px;
+    margin: 50px;
+}
+
+#project .procontainer ul {
+    margin: 40px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 8rem;
+}
+
+#contact h2 {
+    margin-left: 120px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.concontainer {
+    margin: 50px;
+    padding: 20px;
+    background-color: coral;
+    display: flex;
+}
+
+#contact .concontainer .form {
+    margin: 30px;
+}
+
+#contact .concontainer h2 {
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .concontainer input {
+    height: 30px;
+    width: 400px;
+    padding: 20px;
+    font-size: larger;
+
+    font-family: monospace;
+}
+
+#contact .concontainer textarea {
+    height: 90px;
+    width: 400px;
+    padding: 20px;
+    font-size: larger;
+    font-family: monospace;
+}
+
+#contact .concontainer .but {
+    background: gray;
+    padding: 10px;
+    font-size: large;
+    width: 150px;
+    box-shadow: 2px 10px 8px 1px;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+
+#contact .concontainer .but:hover {
+    background-color: rgb(224, 60, 60);
+    color: cornsilk;
+}
+
+#contact .concontainer .site {
+    margin-left: 400px;
+    margin-top: 100px;
+}

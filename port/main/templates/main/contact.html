@@ -1,0 +1,43 @@
+{% extends 'main/index.html' %}
+{% block content %}
+        
+<div id="contact"><br><br><br>
+    <span>____SAY Hii</span>
+    <h2>CONTACT</h2><br><br>
+    <div class="concontainer">
+
+        <form method="POST">
+            {% csrf_token %}
+            <h2>GET IN TOUCH</h2>
+            <div class="form">
+
+                <input name="name" type="text"
+                    placeholder="Your name...">
+            </div>
+            <div class="form">
+
+                <input name="email" type="email"
+                    placeholder="Your mail...">
+            </div>
+            <div class="form">
+
+                <input name="sub" type="text" placeholder="Subject...">
+            </div>
+            <div class="form">
+
+                <textarea name="message" type="text"
+                    placeholder="Your Message..."></textarea>
+            </div>
+            <button type="submit" class="but">Submit</button>
+        </form>
+        <div class="site">
+
+            <!-- <a href="https://github.com/AnchalVaghela">Git</a> -->
+            Mail<br>
+            anchal.p.vaghela@gmail.com
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

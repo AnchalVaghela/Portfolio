@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css"
+            href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link
+            href="http://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <a style="margin-right: 550px;font-size: xx-large;" href="/">AV</a>
+                <i class="fa-regular fa-house-heart"></i><a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#resume">Resume</a>
+                <a href="#project">Project</a>
+                <a href="#contact">Contact</a>
+            </ul>
+        </nav>
+        <div id="home"><br><br><br><br>
+            <div class="homedesc">
+                <p>Hi, I'm a Anchal Vaghela and web developer with a focus on
+                    the Full stack, but still
+                    exploring other technologies and frameworks that catch my
+                    interest! if you're looking for a developer to add to your
+                    team, I'd love
+                    to hear from you!</div>
+            </div>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="about"><br><br><br>
+
+            <span>____SOME INFO</span>
+            <h2>ABOUT ME</h2>
+            <p>I'm a full-stack developer with a back-ground in Computer
+                application and right now I am Persuing MCA . My 3 years of IT
+                experience has given me a strong foundation for web development
+                and building complex solutions. Recently, I graduated from the
+                Sardar Vallbhbhai Global University. I am passionate about
+                coding and solving problems through code, and I am excited to
+                work alongside other amazing programmers and learn so much more!</p>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div id="resume"><br><br><br>
+            <span>____CHECK OUT MY</span>
+            <h2>SKILLS</h2><br><br>
+            <a class="resumeLink" href="{% static 'license.pdf' %}"
+                alt="Alex Calia's resumé" target="_blank"
+                rel="noopener noreferrer">Resume</a><br><br><br><br><br>
+            <img src="{% static 'image/csslogo.png' %}">
+            <img src="{% static 'image/djangologo.png' %}">
+            <img src="{% static 'image/htmllogo.png' %}"><br><br>
+            <img src="{% static 'image/git.png' %}">
+            <img src="{% static 'image/pythonlogo.png' %}">
+            <img src="{% static 'image/vscodelogo.jpeg' %}"><br><br>
+            <img src="{% static 'image/java.png' %}">
+            <img src="{% static 'image/Spring boot.png' %}"><br><br><br><br>
+        </div><br><br><br><br><br><br><br>
+
+        <div id="project"><br><br><br>
+            <span>____TAKE A LOOK AT MY</span>
+            <h2>PROJECTS</h2>
+            <div class="promain">
+                <div class="procontainer">
+                    <img src="{% static 'image/Picture1.png' %}">
+                    <ul>
+                        <h4>Gardenia</h4><br>
+                        <li>This is </li>
+                        <li>This is </li>
+                        <li>This is </li>
+                    </ul>
+                </div>
+                <div class="procontainer">
+                    <img src="{% static 'image/Picture2.jpg' %}">
+                    <ul>
+                        <h4>Online Book Store</h4><br>
+                        <li>This is </li>
+                        <li>This is </li>
+                        <li>This is </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div><br><br><br><br><br>
+        <div id="contact"><br><br><br>
+            <span>____SAY Hii</span>
+            <h2>CONTACT</h2><br><br>
+            <div class="concontainer">
+        
+                <form method="POST">
+                    {% csrf_token %}
+                    <h2>GET IN TOUCH</h2>
+                    <div class="form">
+                        <input name="name" type="text" placeholder="Your name..." required ><br><br>
+                        <input name="email" type="email" placeholder="Your mail..." required><br><br>
+                        <input name="sub" type="text" placeholder="Subject..." required> <br><br>
+                        <textarea name="message" type="text" placeholder="Your Message..." required></textarea>
+                    </div>
+                    <button type="submit" class="but">Submit</button>
+                </form>
+                <div class="site">
+        
+                    <!-- <a href="https://github.com/AnchalVaghela">Git</a> -->
+                    <h3>Mail</h3>
+                    <h4>anchal.p.vaghela@gmail.com</h4>
+                    <h3>LinkdIn Profile</h3>
+                    <h4><a href="https://www.linkedin.com/in/anchal-vaghela-3b8789296/">LinkdIn</a></h4>
+                </div>
+            </div>
+        
+        </div>
+        {% block content %}
+        {% endblock %}
+                <script
+            src="http://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous">
+        </script>
+        <script
+            src="http://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous">
+        </script>
+        <script
+            src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </body>
+
+</html>
